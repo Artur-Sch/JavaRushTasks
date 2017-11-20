@@ -1,0 +1,14 @@
+package com.javarush.task.task14.task1408;
+
+ class UkrainianHen extends Hen {
+    @Override
+    String getDescription() {
+        return (super.getDescription() + " Моя страна - " + Country.UKRAINE + ". Я несу " + egg + " яиц в месяц.");
+    }
+
+    int egg = 14;
+    @Override
+    int getCountOfEggsPerMonth() {
+        return egg;
+    }
+}
