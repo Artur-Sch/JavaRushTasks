@@ -13,18 +13,16 @@ import static java.math.BigDecimal.ROUND_HALF_UP;
 
 public class Solution1 {
     public static void main(String[] args) throws IOException {
-        ArrayList<BigDecimal> integers = new ArrayList<>();
+        ArrayList<Long> integers = new ArrayList<>();
         String s = "3.49 3.50 3.51 -3.49 -3.50 -3.51";
-        BigDecimal bd;
-        for(String s1: s.split("\\s+")){
-            if (s1.startsWith("-")) {
-                bd = new BigDecimal(Double.parseDouble(s1));
-                integers.add(bd.setScale(0, ROUND_HALF_DOWN)) ;
-            } else {
-                bd = new BigDecimal(Double.parseDouble(s1));
-                integers.add(bd.setScale(0, ROUND_HALF_UP)) ;
-            }
-            System.out.println(s1+" ");
+//        BigDecimal bd;
+        int result;
+        for(String s1: s.split("\\s+")) {
+                integers.add(Math.round(Double.parseDouble(s1)));
+            System.out.println(s1 + " ");
+        }
+        for (Long integer : integers) {
+            System.out.println(integer);
         }
 
 //        String delimetr = " ";
