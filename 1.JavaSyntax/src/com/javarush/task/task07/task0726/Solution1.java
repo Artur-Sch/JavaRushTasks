@@ -9,7 +9,7 @@ import java.util.ArrayList;
 Не компилируется задача про котиков
 */
 
-public class Solution {
+public class Solution1 {
     public final static ArrayList<Cat> CATS = new ArrayList<Cat>();
 
     public static void main(String[] args) throws IOException {
@@ -34,6 +34,7 @@ public class Solution {
 
     public static class Cat {
         private String name;
+        private String adress;
         private int age;
         private int weight;
         private int tailLength;
@@ -41,6 +42,13 @@ public class Solution {
         Cat(String name, int age, int weight, int tailLength) {
             this.name = name;
             this.age = age;
+            this.weight = weight;
+            this.tailLength = tailLength;
+        }
+
+        Cat(String name, String adress, int weight, int tailLength) {
+            this.name = name;
+            this.adress = adress;
             this.weight = weight;
             this.tailLength = tailLength;
         }

@@ -11,8 +11,8 @@ public class Solution {
         Clock clock = new Clock();
         Thread.sleep(2000);
         isStopped = true;
-        System.out.println("Clock has to be stopped");
         Thread.sleep(2000);
+        System.out.println("Clock has to be stopped");
         System.out.println("Double-check");
     }
 

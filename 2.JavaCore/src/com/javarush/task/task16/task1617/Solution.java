@@ -26,7 +26,7 @@ public class Solution {
                 System.out.println("Марш!");
             } catch (InterruptedException e) {
                 System.out.println("Прервано!");
-                e.printStackTrace();
+//                e.printStackTrace();
             }
         }
     }
