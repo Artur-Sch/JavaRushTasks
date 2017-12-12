@@ -18,7 +18,7 @@ public class Solution1 {
                 {'p', 'o', 'e', 'e', 'j', 'j'}
         };
 //        detectAllWords(crossword, "home", "same");
-        List<Word> result = detectAllWords(crossword, "home", "same", "luf", "poee", "rrad");
+        List<Word> result = detectAllWords(crossword, "home", "same", "luf", "poee");
         for (Word word : result) {
             System.out.println(word);
         }
@@ -37,7 +37,6 @@ same - (1, 1) - (4, 1)
         String[] sWords = words;
         char[][] charCrossword = new char[5][6];
         for (int i = 0; i < 5; i++) {
-//            System.out.println(Arrays.toString(crossword[i]));
             for (int j = 0; j < 6; j++) {
                 charCrossword[i][j] = (char) crossword[i][j];
             }

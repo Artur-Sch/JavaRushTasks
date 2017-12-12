@@ -196,8 +196,9 @@ same - (1, 1) - (4, 1)
 
 
                         for (int ii = 0; ii < trend.length; ii++)
-                            if (trend[ii] != null)
+                            if (trend[ii] != null) {
                                 result.add(trend[ii]);
+                            }
                     }
                 }
             }
