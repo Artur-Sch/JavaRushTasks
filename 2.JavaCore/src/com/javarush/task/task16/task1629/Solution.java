@@ -11,8 +11,6 @@ public class Solution {
     public static void main(String[] args) throws InterruptedException {
         Read3Strings t1 = new Read3Strings();
         Read3Strings t2 = new Read3Strings();
-
-        //add your code here - добавьте код тут
         t1.start();
         t1.join();
         t2.start();
@@ -23,8 +21,7 @@ public class Solution {
 
     public static class Read3Strings extends Thread {
         public static String line;
-        public  ArrayList<String> list = new ArrayList<>();
-
+        public ArrayList<String> list = new ArrayList<>();
         @Override
         public void run() {
             try {
@@ -36,13 +33,11 @@ public class Solution {
                 e.printStackTrace();
             }
         }
-
         public void printResult() {
             for (String s : list) {
-                System.out.print(s+ " ");
+                System.out.print(s + " ");
             }
             System.out.println();
         }
     }
-    //add your code here - добавьте код тут
 }

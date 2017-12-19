@@ -15,7 +15,6 @@ public class Solution1 {
     public static void main(String[] args) throws IOException {
         ArrayList<Long> integers = new ArrayList<>();
         String s = "3.49 3.50 3.51 -3.49 -3.50 -3.51";
-//        BigDecimal bd;
         int result;
         for(String s1: s.split("\\s+")) {
                 integers.add(Math.round(Double.parseDouble(s1)));

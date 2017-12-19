@@ -6,11 +6,9 @@ import java.util.ArrayList;
 public class Solution {
     public static String firstFileName;
     public static String secondFileName;
-    public static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
 
     static {
-        try {
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             firstFileName = reader.readLine();
             secondFileName = reader.readLine();
         } catch (IOException e) {
@@ -47,7 +45,6 @@ public class Solution {
     public static class ReadFileThread extends Thread implements ReadFileInterface {
 
         String nameFile;
-        ArrayList<String> list = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
 
         @Override
@@ -62,13 +59,11 @@ public class Solution {
 
         @Override
         public void run() {
-            try {
-                BufferedReader fileReader = new BufferedReader(new InputStreamReader(new FileInputStream(nameFile)));
+            try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(new FileInputStream(nameFile)))){
                 String line;
                 while ((line = fileReader.readLine()) != null) {
                     sb.append(line).append(" ");
                 }
-                reader.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -15,7 +15,6 @@ public class Solution {
 
         List<String> result = new ArrayList<>();
         Stack<File> files = new Stack<>();
-
         files.push(new File(root));
         while (!files.isEmpty()) {
             File current = files.pop();

@@ -18,7 +18,6 @@ public class Solution {
         if (inputStream1.available() > 0) {
             inputStream1.read(buffer1);
         }
-//            inputStream1.close();
         byte[] buffer2 = new byte[inputStream2.available()];
         if (inputStream2.available() > 0) {
             int count = inputStream2.read(buffer2);
