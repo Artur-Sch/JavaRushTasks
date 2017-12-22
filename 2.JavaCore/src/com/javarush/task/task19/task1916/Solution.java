@@ -16,8 +16,6 @@ public class Solution {
     public static List<LineItem> lines = new ArrayList<LineItem>();
 
     public static void main(String[] args) throws IOException {
-        ArrayList<String> list1 = new ArrayList<>();
-        ArrayList<String> list2 = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
              BufferedReader fileReader1 = new BufferedReader(new FileReader(reader.readLine()));
              BufferedReader fileReader2 = new BufferedReader(new FileReader(reader.readLine()))) {

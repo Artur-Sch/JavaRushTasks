@@ -20,8 +20,6 @@ public class Solution {
             System.setOut(consoleStream);
             outputStream.writeTo(writer);
             System.out.println(outputStream.toString());
-//            String result = outputStream.toString();
-//            byte[] results = result.getBytes();
         }
     }
 

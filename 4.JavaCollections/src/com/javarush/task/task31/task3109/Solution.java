@@ -28,6 +28,8 @@ public class Solution {
                 pr.loadFromXML(inputStream);
             } else {
                 pr.load(inputStream);
+
+
             }
         }catch (IOException e) {
         }
